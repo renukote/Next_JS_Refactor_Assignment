@@ -1,6 +1,6 @@
 import React from "react";
-import HeadingText from "../heading";
-import CustomCard from "../customCard";
+import HeadingText from "../Heading/Heading";
+import CustomCard from "../CustomCard/CustomCard";
 import {cardDataOne, cardDataTwo} from "@/app/utils/constants" 
 
 const HomePage = () => {

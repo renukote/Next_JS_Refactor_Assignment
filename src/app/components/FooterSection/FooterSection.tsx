@@ -36,6 +36,8 @@ const Footer: React.FC<FooterProps> = () => {
                   <Image
                     alt="plus-icon"
                     src={activeTab === index ? "/images/minus.png" : "/images/plus.png"}
+					width={20}
+					height={20}
                   />
                 </button>
               </div>

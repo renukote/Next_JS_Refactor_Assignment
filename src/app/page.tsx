@@ -1,9 +1,9 @@
-import Navbar from "./components/navbar";
-import HomePage from "./components/homePage";
-import AboutUs from "./components/aboutUs";
-import HomePageTwo from "./components/homePageTwo";
-import FooterSection from "./components/footerSection";
-import ScrollingText from "./components/Slider";
+import Navbar from "./components/Navbar/Navbar";
+import HomePage from "./components/HomePage/HomePage";
+import AboutUs from "./components/AboutUs/AboutUs";
+import HomePageTwo from "./components/HomePageTwo/HomePageTwo";
+import FooterSection from "./components/FooterSection/FooterSection";
+import ScrollingText from "./components/Slider/Slider";
 
 export default function Home() {
   return (
