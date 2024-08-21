@@ -1,8 +1,8 @@
 "use client";
+import { useState } from "react";
 import Image from "next/image";
-import React, {useState} from "react";
 
-const AboutUs = () => {
+export const AboutUs = () => {
   const [hoverPosition, setHoverPosition] = useState<{
     x: number;
     y: number;
@@ -14,7 +14,7 @@ const AboutUs = () => {
     const rect = event.currentTarget.getBoundingClientRect();
     const x = event.clientX - rect.left;
     const y = event.clientY - rect.top;
-    setHoverPosition({x, y});
+    setHoverPosition({ x, y });
   };
 
   const handleMouseLeave = () => {
@@ -22,26 +22,24 @@ const AboutUs = () => {
   };
 
   return (
-    <div
-      className="container mx-auto p-4 pt-[80px] xl:pt-[40px]  md:w-3/4 lg:w-3/4 xl:w-2/2"
-      id="about">
-      <div className="pt-[80px] ">
+    <section className="container mx-auto p-4 pt-[80px] xl:pt-[40px]  md:w-3/4 lg:w-3/4 xl:w-2/2">
+      <div className="pt-[80px]">
         <div
           className="hidden sm:block relative w-[100%] h-[400px] overflow-hidden"
           onMouseMove={handleMouseMove}
-          onMouseLeave={handleMouseLeave}>
+          onMouseLeave={handleMouseLeave}
+        >
           <div className="flex justify-between">
             <div className="my-auto">
-              <h1 className="hidden sm:block text-white text-[80px] font-bold uppercase leading-none">
-                About
+              <h1 className="hidden sm:block text-white text-[80px] font-bold uppercase leading-none whitespace-pre">
+                {`About \nus`}
               </h1>
-              <h1 className="hidden sm:block text-white text-[80px] font-bold uppercase leading-none">
-                us
-              </h1>
-              <p className="text-white opacity-70 leading-relaxed">Lorem</p>
-              <p className="text-white opacity-70 leading-relaxed">Lorem</p>
+              <p className="text-white opacity-70 leading-relaxed whitespace-pre">
+                {`Lorem \nLorem`}
+              </p>
             </div>
-            <div className="w-[50%] opacity-[70%] leading-relaxed my-auto">
+
+            <p className="w-[50%] opacity-[70%] leading-relaxed my-auto">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -49,15 +47,17 @@ const AboutUs = () => {
               reprehenderit in voluptate velit esse cillum dolore eu fugiat
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
               sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </div>
+            </p>
           </div>
+
           <div
             className="absolute inset-0 transition-none duration-none"
             style={{
               clipPath: hoverPosition
                 ? `circle(150px at ${hoverPosition.x}px ${hoverPosition.y}px)`
                 : "circle(0px at 50% 50%)",
-            }}>
+            }}
+          >
             <Image
               src="/images/hover-image.png"
               alt="About us"
@@ -66,16 +66,16 @@ const AboutUs = () => {
             />
           </div>
         </div>
-        <div className="block sm:hidden w-full sm:w-1/3 md:w-1/3 lg:w-1/3 xl:w-1/3 flex flex-col gap-5 mb-4 pr-4">
+
+        <div className="sm:hidden w-full sm:w-1/3 md:w-1/3 lg:w-1/3 xl:w-1/3 flex flex-col gap-5 mb-4 pr-4">
           <div>
             <h1 className="text-white text-[50px] sm:text-[80px] font-[600] uppercase leading-none">
               Lorem Ipsum
             </h1>
-            <p className="opacity-[70%] leading-relaxed  ">Instagram</p>
-            <p className="opacity-[70%] leading-relaxed  ">LinkedIn</p>
+            <p className="opacity-[70%] leading-relaxed">Instagram</p>
+            <p className="opacity-[70%] leading-relaxed">LinkedIn</p>
 
-            <p className="opacity-[70%] leading-relaxed pt-[60px] ">
-              {" "}
+            <p className="opacity-[70%] leading-relaxed pt-[60px]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -87,8 +87,6 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
-
-export default AboutUs;
