@@ -1,15 +1,15 @@
-import icon1 from "../../../public/Icon.png";
-import icon2 from "../../../public/Frame 1321314690_1.png";
-import icon3 from "../../../public/server-01.png";
-import icon4 from "../../../public/target-05.png";
-import icon6 from "../../../public/percent-03.png";
-import icon7 from "../../../public/cpu-chip-01.png";
-import icon8 from "../../../public/cube-01.png";
-import icon5 from "../../../public/Frame 1321314691.png";
-import icon9 from "../../../public/shield-tick.png";
-import icon10 from "../../../public/Icon_2.png";
-import icon11 from "../../../public/Frame 1321314690.png";
-import icon12 from "../../../public/bar-chart-circle-01.png";
+import icon1 from "../../../public/images/icon-1.png";
+import icon2 from "../../../public/images/frame-1.png";
+import icon3 from "../../../public/images/server.png";
+import icon4 from "../../../public/images/target.png";
+import icon6 from "../../../public/images/percent.png";
+import icon7 from "../../../public/images/cpu-chip.png";
+import icon8 from "../../../public/images/cube.png";
+import icon5 from "../../../public/images/frame-3.png";
+import icon9 from "../../../public/images/shield-tick.png";
+import icon10 from "../../../public/images/icon-2.png";
+import icon11 from "../../../public/images/frame-2.png";
+import icon12 from "../../../public/images/bar-chart-circle.png";
 
 export const cardDataOne = [
   {

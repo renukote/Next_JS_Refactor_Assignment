@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import React, {useState} from "react";
-import aboutUsImage from "../../../../public/hoverImage.png";
 
 const AboutUs = () => {
   const [hoverPosition, setHoverPosition] = useState<{
@@ -60,8 +59,8 @@ const AboutUs = () => {
                 : "circle(0px at 50% 50%)",
             }}>
             <Image
-              src={aboutUsImage}
-              alt="About Us"
+              src="/images/hover-image.png"
+              alt="About us"
               layout="fill"
               objectFit="cover"
             />

@@ -1,8 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import PlusIcon from "../../../../public/Frame 1321314700.png";
-import MinusIcon from "../../../../public/Frame 1321314700 (1).png";
 import { tabData } from "@/app/utils/constants";
 
 interface FooterProps {}
@@ -37,7 +35,7 @@ const Footer: React.FC<FooterProps> = () => {
                 <button className="text-left text-white font-semibold focus:outline-none">
                   <Image
                     alt="plus-icon"
-                    src={activeTab === index ? MinusIcon : PlusIcon}
+                    src={activeTab === index ? "/images/minus.png" : "/images/plus.png"}
                   />
                 </button>
               </div>

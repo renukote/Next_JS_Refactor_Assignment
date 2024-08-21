@@ -2,9 +2,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "../../../../public/logo.png";
-import bar from "../../../../public/Frame.png";
-import cross from "../../../../public/x-close.png";
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -13,9 +10,9 @@ const Navbar: React.FC = () => {
   return (
     <>
       <div className="p-4 pl-8 flex justify-between items-center">
-        <Image src={logo} alt="Logo" width={100} />
+        <Image src="/images/logo.png" alt="Logo" width={100} height={100} />
         <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="sm:hidden">
-          <Image src={isMenuOpen ? cross : bar} alt="Menu Icon" width={24} height={24} />
+          <Image src={isMenuOpen ? "/images/x-close.png" : "/images/menu.png"} alt="Menu icon" width={24} height={24} />
         </button>
       </div>
       {isMenuOpen && (
