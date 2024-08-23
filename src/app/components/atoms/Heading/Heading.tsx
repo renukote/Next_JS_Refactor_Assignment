@@ -18,7 +18,7 @@ export const Heading = ({
 
   return (
     <Tag
-      className={`text-white font-[600] uppercase leading-none ${headingFontSize} ${additionalClassNames}`}
+      className={`font-[600] uppercase leading-none text-white ${headingFontSize} ${additionalClassNames}`}
     >
       {text}
     </Tag>

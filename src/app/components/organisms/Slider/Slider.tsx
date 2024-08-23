@@ -9,8 +9,8 @@ export const Slider = () => {
     .join("");
 
   return (
-    <div className="overflow-hidden relative w-full bg-white text-white border border-black p-4 bg-gradient-slider">
-      <pre className="uppercase animate-scrollLeft">{repeatedText}</pre>
+    <div className="relative w-full overflow-hidden border border-black bg-white bg-gradient-slider p-4 text-white">
+      <pre className="animate-scrollLeft uppercase">{repeatedText}</pre>
     </div>
   );
 };

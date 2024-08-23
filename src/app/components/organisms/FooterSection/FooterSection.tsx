@@ -12,7 +12,7 @@ export const Footer = () => {
   };
 
   return (
-    <footer className="lg:mt-[4rem] lg:pb-[10rem] ">
+    <footer className="lg:mt-[4rem] lg:pb-[10rem]">
       {tabData.map(({ title, content }, index) => (
         <div key={title} className="rounded p-2 pb-2">
           <div
@@ -25,8 +25,8 @@ export const Footer = () => {
                   : "",
             }}
           >
-            <div className="container mx-auto max-w-[1237px] px-5 h-[48px] flex justify-between items-center relative">
-              <p className="text-white uppercase lg:text-[1.5rem] md:text-[1rem] xs:text-[1rem] font-medium">
+            <div className="container relative mx-auto flex h-[48px] max-w-[1237px] items-center justify-between px-5">
+              <p className="xs:text-[1rem] font-medium uppercase text-white md:text-[1rem] lg:text-[1.5rem]">
                 {title}
               </p>
               <Button additionalButtonClassNames="text-left text-white font-semibold">
@@ -45,7 +45,7 @@ export const Footer = () => {
           </div>
 
           {activeTab === index && (
-            <p className="container mx-auto max-w-[1237px] px-5  leading-7 mt-5 text-[#a1a1a1]">
+            <p className="container mx-auto mt-5 max-w-[1237px] px-5 leading-7 text-[#a1a1a1]">
               {content}
             </p>
           )}

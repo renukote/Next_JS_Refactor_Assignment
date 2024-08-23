@@ -17,13 +17,13 @@ export const ContentCard = ({
   title,
 }: ContentCardProps) => {
   return (
-    <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 xl:w-1/3 flex flex-col gap-5 mb-4 pr-4">
+    <div className="mb-4 flex w-full flex-col gap-5 pr-4 sm:w-1/3 md:w-1/3 lg:w-1/3 xl:w-1/3">
       {headImage && <Image alt="No image" src={headImage} />}
 
       {title && <Heading tagType="h1" text={title} viewType="small" />}
 
       {paragraph && (
-        <p className="opacity-[70%] leading-relaxed">{paragraph}</p>
+        <p className="leading-relaxed opacity-[70%]">{paragraph}</p>
       )}
 
       {icon && <Image alt="Icon" src={icon} />}
