@@ -1,27 +1,27 @@
-import { AboutUs } from "./components/AboutUs/AboutUs";
-import { ContentShowcase } from "./components/ContentShowcase/ContentShowcase";
-import { Slider } from "./components/Slider/Slider";
+import { AboutUs } from "./components/organisms/AboutUs/AboutUs";
+import { ContentShowcase } from "./components/organisms/ContentShowcase/ContentShowcase";
+import { Slider } from "./components/organisms/Slider/Slider";
 import {
-  cardDataFour,
-  cardDataOne,
-  cardDataThree,
-  cardDataTwo,
-} from "./utils/constants";
+  cardFourData,
+  cardOneData,
+  cardThreeData,
+  cardTwoData,
+} from "./data/allPageData";
 
 export default function Home() {
   return (
     <>
       <ContentShowcase
         headingText="Lorem ipsum"
-        topCardDataSet={cardDataOne}
-        bottomCardDataSet={cardDataTwo}
+        topCardDataSet={cardOneData}
+        bottomCardDataSet={cardTwoData}
       />
       <AboutUs />
       <Slider />
       <ContentShowcase
         headingText="Lorem ipsum dolor set"
-        topCardDataSet={cardDataThree}
-        bottomCardDataSet={cardDataFour}
+        topCardDataSet={cardThreeData}
+        bottomCardDataSet={cardFourData}
       />
     </>
   );

@@ -1,7 +1,8 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import { tabData } from "@/app/utils/constants";
+import { tabData } from "@/app/data/allPageData";
+import { Button } from "../../atoms/Button/Button";
 
 export const Footer = () => {
   const [activeTab, setActiveTab] = useState<number | null>(0);
@@ -28,7 +29,7 @@ export const Footer = () => {
               <p className="text-white uppercase lg:text-[1.5rem] md:text-[1rem] xs:text-[1rem] font-medium">
                 {title}
               </p>
-              <button className="text-left text-white font-semibold focus:outline-none">
+              <Button additionalButtonClassNames="text-left text-white font-semibold">
                 <Image
                   alt="plus-icon"
                   src={
@@ -39,7 +40,7 @@ export const Footer = () => {
                   width={20}
                   height={20}
                 />
-              </button>
+              </Button>
             </div>
           </div>
 

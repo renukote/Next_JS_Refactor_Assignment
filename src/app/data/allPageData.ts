@@ -11,7 +11,7 @@ import icon10 from "../../../public/images/icon-2.png";
 import icon11 from "../../../public/images/frame-2.png";
 import icon12 from "../../../public/images/bar-chart-circle.png";
 
-export const cardDataOne = [
+export const cardOneData = [
   {
     title: "dolor sit",
     paragraph: `Lorem ipsum dolor sit amet consectetur. In nibh nam vel lacus sit.
@@ -51,7 +51,7 @@ export const cardDataOne = [
   },
 ];
 
-export const cardDataTwo = [
+export const cardTwoData = [
   {
     headImage: icon5,
   },
@@ -61,7 +61,8 @@ export const cardDataTwo = [
     icon: icon8,
   },
 ];
-export const cardDataThree = [
+
+export const cardThreeData = [
   {
     title: "Lorem ipsum dolor",
     paragraph: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
@@ -73,7 +74,8 @@ export const cardDataThree = [
     icon: icon10,
   },
 ];
-export const cardDataFour = [
+
+export const cardFourData = [
   {
     headImage: icon11,
   },
@@ -83,30 +85,31 @@ export const cardDataFour = [
     icon: icon12,
   },
 ];
+
 export const tabData = [
-    {
-      title: "Tab 1 Title",
-      content:
-        "Content for Tab 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    },
-    {
-      title: "Tab 2 Title",
-      content:
-        "Content for Tab 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    },
-    {
-      title: "Tab 3 Title",
-      content:
-        "Content for Tab 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    },
-    {
-      title: "Tab 4 Title",
-      content:
-        "Content for Tab 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    },
-    {
-      title: "Tab 5 Title",
-      content:
-        "Content for Tab 5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    },
-  ];
+  {
+    title: "Tab 1 Title",
+    content:
+      "Content for Tab 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+  {
+    title: "Tab 2 Title",
+    content:
+      "Content for Tab 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+  {
+    title: "Tab 3 Title",
+    content:
+      "Content for Tab 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+  {
+    title: "Tab 4 Title",
+    content:
+      "Content for Tab 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+  {
+    title: "Tab 5 Title",
+    content:
+      "Content for Tab 5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+];

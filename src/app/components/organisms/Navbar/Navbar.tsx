@@ -1,7 +1,8 @@
 "use client";
 import { useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
+import { Image } from "../../atoms/Image/Image";
+import { Button } from "../../atoms/Button/Button";
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,14 +14,14 @@ export const Navbar = () => {
     <header>
       <div className="p-4 pl-8 flex justify-between items-center">
         <Image src="/images/logo.png" alt="Logo" width={100} height={100} />
-        <button onClick={toggleMenu} className="sm:hidden">
+        <Button onClick={toggleMenu} additionalButtonClassNames="sm:hidden">
           <Image
             src={isMenuOpen ? "/images/x-close.png" : "/images/menu.png"}
             alt={isMenuOpen ? "Close icon" : "Menu icon"}
             width={24}
             height={24}
           />
-        </button>
+        </Button>
       </div>
 
       {isMenuOpen && (
@@ -38,6 +39,7 @@ export const Navbar = () => {
                 {item}
               </Link>
             ))}
+
             <div className="flex justify-between gap-12">
               <Link
                 href="/#"

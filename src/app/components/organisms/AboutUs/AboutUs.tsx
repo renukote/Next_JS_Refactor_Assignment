@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
-import Image from "next/image";
+import { Image } from "../../atoms/Image/Image";
+import { Heading } from "../../atoms/Heading/Heading";
 
 export const AboutUs = () => {
   const [hoverPosition, setHoverPosition] = useState<{
@@ -31,9 +32,11 @@ export const AboutUs = () => {
         >
           <div className="flex justify-between">
             <div className="my-auto">
-              <h1 className="hidden sm:block text-white text-[80px] font-bold uppercase leading-none whitespace-pre">
-                {`About \nus`}
-              </h1>
+              <Heading
+                additionalClassNames="hidden sm:block whitespace-pre"
+                tagType="h1"
+                text={`About \nus`}
+              />
               <p className="text-white opacity-70 leading-relaxed whitespace-pre">
                 {`Lorem \nLorem`}
               </p>
@@ -68,23 +71,19 @@ export const AboutUs = () => {
         </div>
 
         <div className="sm:hidden w-full sm:w-1/3 md:w-1/3 lg:w-1/3 xl:w-1/3 flex flex-col gap-5 mb-4 pr-4">
-          <div>
-            <h1 className="text-white text-[50px] sm:text-[80px] font-[600] uppercase leading-none">
-              Lorem Ipsum
-            </h1>
-            <p className="opacity-[70%] leading-relaxed">Instagram</p>
-            <p className="opacity-[70%] leading-relaxed">LinkedIn</p>
+          <Heading text="Lorem Ipsum" tagType="h1" />
+          <p className="opacity-[70%] leading-relaxed">Instagram</p>
+          <p className="opacity-[70%] leading-relaxed">LinkedIn</p>
 
-            <p className="opacity-[70%] leading-relaxed pt-[60px]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
+          <p className="opacity-[70%] leading-relaxed pt-[60px]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
         </div>
       </div>
     </section>
