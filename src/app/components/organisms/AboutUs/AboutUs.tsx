@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { MouseEvent, useState } from "react";
 import { Heading } from "../../atoms/Heading/Heading";
 import { Image } from "../../atoms/Image/Image";
 
@@ -10,9 +10,7 @@ export const AboutUs = () => {
     y: number;
   } | null>(null);
 
-  const handleMouseMove = (
-    event: React.MouseEvent<HTMLDivElement, MouseEvent>,
-  ) => {
+  const handleMouseMove = (event: MouseEvent<HTMLDivElement>) => {
     const rect = event.currentTarget.getBoundingClientRect();
     const x = event.clientX - rect.left;
     const y = event.clientY - rect.top;
