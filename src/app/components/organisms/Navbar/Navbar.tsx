@@ -1,8 +1,9 @@
 "use client";
+
 import { useState } from "react";
 import Link from "next/link";
-import { Image } from "../../atoms/Image/Image";
 import { Button } from "../../atoms/Button/Button";
+import { Image } from "../../atoms/Image/Image";
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

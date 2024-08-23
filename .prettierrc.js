@@ -6,7 +6,10 @@ module.exports = {
   singleQuote: false,
   tabWidth: 2,
   trailingComma: "all",
-  plugins: ["prettier-plugin-tailwindcss"],
+  plugins: [
+    "@trivago/prettier-plugin-sort-imports",
+    "prettier-plugin-tailwindcss",
+  ],
   importOrder: [
     "(^react$|^react/(.*)$)",
     "(^next$|^next/(.*)$)",

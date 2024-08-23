@@ -1,7 +1,7 @@
 import React from "react";
 import { StaticImageData } from "next/dist/shared/lib/get-img-props";
-import { Image } from "../../atoms/Image/Image";
 import { Heading } from "../../atoms/Heading/Heading";
+import { Image } from "../../atoms/Image/Image";
 
 export interface ContentCardProps {
   headImage?: string | StaticImageData;

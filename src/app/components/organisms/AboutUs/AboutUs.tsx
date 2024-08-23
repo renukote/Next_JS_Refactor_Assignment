@@ -1,7 +1,8 @@
 "use client";
+
 import { useState } from "react";
-import { Image } from "../../atoms/Image/Image";
 import { Heading } from "../../atoms/Heading/Heading";
+import { Image } from "../../atoms/Image/Image";
 
 export const AboutUs = () => {
   const [hoverPosition, setHoverPosition] = useState<{
