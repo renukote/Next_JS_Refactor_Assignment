@@ -4,8 +4,8 @@ import NextImage, {
 } from "next/image";
 
 interface ImageProps extends NextImageProps {
-  src: string | StaticImageData;
   alt: string;
+  src: string | StaticImageData;
 }
 
 export const Image = ({ src, alt = "image", ...rest }: ImageProps) => {

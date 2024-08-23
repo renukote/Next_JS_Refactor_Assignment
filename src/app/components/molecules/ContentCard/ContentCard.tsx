@@ -4,17 +4,17 @@ import { Image } from "../../atoms/Image/Image";
 import { Heading } from "../../atoms/Heading/Heading";
 
 export interface ContentCardProps {
-  title?: string;
-  paragraph?: string;
-  icon?: string | StaticImageData;
   headImage?: string | StaticImageData;
+  icon?: string | StaticImageData;
+  paragraph?: string;
+  title?: string;
 }
 
 export const ContentCard = ({
-  title,
-  paragraph,
-  icon,
   headImage,
+  icon,
+  paragraph,
+  title,
 }: ContentCardProps) => {
   return (
     <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 xl:w-1/3 flex flex-col gap-5 mb-4 pr-4">

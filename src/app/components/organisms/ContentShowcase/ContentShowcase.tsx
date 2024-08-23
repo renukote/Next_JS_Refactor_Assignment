@@ -6,15 +6,15 @@ import {
 } from "../../molecules/ContentCard/ContentCard";
 
 interface ContentShowcaseProps {
+  bottomCardDataSet: ContentCardProps[];
   headingText: string;
   topCardDataSet: ContentCardProps[];
-  bottomCardDataSet: ContentCardProps[];
 }
 
 export const ContentShowcase = ({
+  bottomCardDataSet,
   headingText,
   topCardDataSet,
-  bottomCardDataSet,
 }: ContentShowcaseProps) => {
   return (
     <div className="container mx-auto p-4 pt-[80px] xl:pt-[40px]  md:w-3/4 lg:w-3/4 xl:w-2/2">
