@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react";
 
-interface ButtonProps {
+export interface ButtonProps {
   additionalButtonClassNames?: string;
   children: ReactNode;
   onClick?: () => void;
