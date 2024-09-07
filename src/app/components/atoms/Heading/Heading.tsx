@@ -14,11 +14,11 @@ export const Heading = ({
   viewType = "large",
 }: HeadingProps) => {
   const headingFontSize =
-    viewType === "small" ? "text-[24px]" : "text-[50px] sm:text-[80px]";
+    viewType === "small" ? "text-2xl" : "text-5xl sm:text-7xl";
 
   return (
     <Tag
-      className={`font-[600] uppercase leading-none text-white ${headingFontSize} ${additionalClassNames}`}
+      className={`font-semibold uppercase leading-none text-white ${headingFontSize} ${additionalClassNames}`}
     >
       {text}
     </Tag>

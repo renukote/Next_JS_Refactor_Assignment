@@ -2,9 +2,13 @@ import "@testing-library/jest-dom";
 import { render, screen } from "@testing-library/react";
 import { Heading, HeadingProps } from "./Heading";
 
+const defaultProps = {
+	text: "Sample Heading"
+}
+
 describe("Heading", () => {
   const renderHeading = (additionalProps?: Partial<HeadingProps>) => {
-    render(<Heading {...additionalProps} text="Sample Heading" />);
+    render(<Heading {...defaultProps} {...additionalProps} />);
   };
 
   it("renders the text correctly", () => {
@@ -39,13 +43,13 @@ describe("Heading", () => {
     renderHeading({ viewType: "large" });
     expect(
       screen.getByRole("heading", { name: /sample heading/i }),
-    ).toHaveClass("text-[50px]");
+    ).toHaveClass("text-5xl");
   });
 
   it("applies the correct font size for small view type", () => {
     renderHeading({ viewType: "small" });
     expect(
       screen.getByRole("heading", { name: /sample heading/i }),
-    ).toHaveClass("text-[24px]");
+    ).toHaveClass("text-2xl");
   });
 });
