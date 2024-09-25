@@ -1,8 +1,8 @@
 "use client";
 
 import { MouseEvent, useState } from "react";
-import { Heading } from "../../atoms/Heading/Heading";
-import { Image } from "../../atoms/Image/Image";
+import { Heading } from "@components/atoms/Heading/Heading";
+import { Image } from "@components/atoms/Image/Image";
 
 export const AboutUs = () => {
   const [hoverPosition, setHoverPosition] = useState<{
