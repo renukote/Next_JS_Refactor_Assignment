@@ -1,16 +1,3 @@
-import icon12 from "../../../public/images/bar-chart-circle.png";
-import icon7 from "../../../public/images/cpu-chip.png";
-import icon8 from "../../../public/images/cube.png";
-import icon2 from "../../../public/images/frame-1.png";
-import icon11 from "../../../public/images/frame-2.png";
-import icon5 from "../../../public/images/frame-3.png";
-import icon1 from "../../../public/images/icon-1.png";
-import icon10 from "../../../public/images/icon-2.png";
-import icon6 from "../../../public/images/percent.png";
-import icon3 from "../../../public/images/server.png";
-import icon9 from "../../../public/images/shield-tick.png";
-import icon4 from "../../../public/images/target.png";
-
 export const cardOneData = [
   {
     title: "dolor sit",
@@ -19,7 +6,7 @@ export const cardOneData = [
       faucibus aliquet quis sed sed. Phasellus non at lacus convallis
       elementum. Suspendisse tincidunt congue sem turpis. Nulla eu lorem
       cras leo.`,
-    icon: icon1,
+    icon: "/images/add-people.png",
   },
   {
     title: "Lorem ipsum dolor sit",
@@ -27,38 +14,38 @@ export const cardOneData = [
       nisl. Dignissim molestie amet purus felis egestas amet eget.
       Viverra malesuada ultricies nunc vel diam posuere mauris sociis
       maecenas. Aenean dui et nec ultrices libero lacus.`,
-    icon: icon3,
+    icon: "/images/server.png",
   },
   {
-    headImage: icon2,
+    headImage: "/images/frame-1.png",
     title: "Lorem ipsum dolor sit",
     paragraph: `Sed ut perspiciatis unde omnis iste natus error sit voluptatem
       accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
       quae ab illo inventore veritatis et quasi architecto beatae vitae
       dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
       aspernatur aut odit aut fugit.`,
-    icon: icon4,
+    icon: "/images/target.png",
   },
   {
     title: "Lorem ipsum",
     paragraph: `Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.`,
-    icon: icon6,
+    icon: "/images/percent.png",
   },
   {
     title: "dolor sit amet",
     paragraph: `Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.`,
-    icon: icon7,
+    icon: "/images/cpu-chip.png",
   },
 ];
 
 export const cardTwoData = [
   {
-    headImage: icon5,
+    headImage: "/images/frame-3.png",
   },
   {
     title: "Lorem ipsum dolor",
     paragraph: `Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.`,
-    icon: icon8,
+    icon: "/images/cube.png",
   },
 ];
 
@@ -66,23 +53,23 @@ export const cardThreeData = [
   {
     title: "Lorem ipsum dolor",
     paragraph: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
-    icon: icon9,
+    icon: "/images/shield-tick.png",
   },
   {
     title: "dolor sit amet",
     paragraph: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
-    icon: icon10,
+    icon: "/images/connect.png",
   },
 ];
 
 export const cardFourData = [
   {
-    headImage: icon11,
+    headImage: "/images/frame-2.png",
   },
   {
     title: "Lorem ipsum",
     paragraph: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
-    icon: icon12,
+    icon: "/images/bar-chart-circle.png",
   },
 ];
 

@@ -29,12 +29,12 @@ export const Navbar = () => {
         <div className="flex h-[85vh] items-center sm:hidden">
           <nav
             className="mt-2 flex flex-col space-y-6 px-5"
-            onClick={() => setIsMenuOpen(false)}
+            onClick={toggleMenu}
           >
-            {menuItems.map((item, index) => (
+            {menuItems.map((item) => (
               <Link
                 href={`#${item}`}
-                key={index}
+                key={item}
                 className="text-xl font-medium capitalize tracking-wide hover:text-gray-300"
               >
                 {item}
@@ -44,7 +44,7 @@ export const Navbar = () => {
             <div className="flex justify-between gap-12">
               <Link
                 href="/#"
-                className="text-xl font-bold uppercase tracking-wide text-[#666666]"
+                className="text-xl font-bold uppercase tracking-wide text-gray-600"
               >
                 Coming Soon
               </Link>

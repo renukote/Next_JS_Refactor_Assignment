@@ -1,3 +1,4 @@
+import React from "react";
 import { AboutUs } from "./components/organisms/AboutUs/AboutUs";
 import { ContentShowcase } from "./components/organisms/ContentShowcase/ContentShowcase";
 import { Slider } from "./components/organisms/Slider/Slider";

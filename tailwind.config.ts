@@ -14,6 +14,8 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "gradient-slider":
           "linear-gradient(90deg, rgba(89,62,91,1) 9%, rgba(25,178,113,1) 62%)",
+        "gradient-footer":
+          "linear-gradient(90deg, rgba(89,62,91,1) 9%, rgba(25,178,113,1) 62%)",
       },
       keyframes: {
         scrollLeft: {

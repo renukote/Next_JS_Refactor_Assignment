@@ -4,11 +4,15 @@ import { MouseEvent, useState } from "react";
 import { Heading } from "../../atoms/Heading/Heading";
 import { Image } from "../../atoms/Image/Image";
 
+type HoverPositionType = {
+  x: number;
+  y: number;
+};
+
 export const AboutUs = () => {
-  const [hoverPosition, setHoverPosition] = useState<{
-    x: number;
-    y: number;
-  } | null>(null);
+  const [hoverPosition, setHoverPosition] = useState<HoverPositionType | null>(
+    null,
+  );
 
   const handleMouseMove = (event: MouseEvent<HTMLDivElement>) => {
     const rect = event.currentTarget.getBoundingClientRect();
@@ -22,10 +26,10 @@ export const AboutUs = () => {
   };
 
   return (
-    <section className="xl:w-2/2 container mx-auto p-4 pt-[80px] md:w-3/4 lg:w-3/4 xl:pt-[40px]">
-      <div className="pt-[80px]">
+    <section className="xl:w-2/2 container mx-auto p-4 pt-20 md:w-3/4 lg:w-3/4 xl:pt-10">
+      <div className="pt-20">
         <div
-          className="relative hidden h-[400px] w-[100%] overflow-hidden sm:block"
+          className="relative hidden h-[400px] w-full overflow-hidden sm:block"
           onMouseMove={handleMouseMove}
           onMouseLeave={handleMouseLeave}
         >
@@ -41,7 +45,7 @@ export const AboutUs = () => {
               </p>
             </div>
 
-            <p className="my-auto w-[50%] leading-relaxed opacity-[70%]">
+            <p className="my-auto w-1/2 leading-relaxed opacity-70">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -60,21 +64,16 @@ export const AboutUs = () => {
                 : "circle(0px at 50% 50%)",
             }}
           >
-            <Image
-              src="/images/hover-image.png"
-              alt="About us"
-              layout="fill"
-              objectFit="cover"
-            />
+            <Image src="/images/hover-image.png" alt="About us" fill />
           </div>
         </div>
 
         <div className="mb-4 flex w-full flex-col gap-5 pr-4 sm:hidden sm:w-1/3 md:w-1/3 lg:w-1/3 xl:w-1/3">
           <Heading text="Lorem Ipsum" tagType="h1" />
-          <p className="leading-relaxed opacity-[70%]">Instagram</p>
-          <p className="leading-relaxed opacity-[70%]">LinkedIn</p>
+          <p className="leading-relaxed opacity-70">Instagram</p>
+          <p className="leading-relaxed opacity-70">LinkedIn</p>
 
-          <p className="pt-[60px] leading-relaxed opacity-[70%]">
+          <p className="pt-[60px] leading-relaxed opacity-70">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut

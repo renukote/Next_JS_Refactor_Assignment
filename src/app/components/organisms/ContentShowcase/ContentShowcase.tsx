@@ -17,8 +17,8 @@ export const ContentShowcase = ({
   topCardDataSet,
 }: ContentShowcaseProps) => {
   return (
-    <div className="xl:w-2/2 container mx-auto p-4 pt-[80px] md:w-3/4 lg:w-3/4 xl:pt-[40px]">
-      <div className="w-full pb-[60px] pt-[80px] sm:w-[60%]">
+    <section className="xl:w-2/2 container mx-auto p-4 pt-20 md:w-3/4 lg:w-3/4 xl:pt-10">
+      <div className="w-full pb-16 pt-20 sm:w-3/5">
         <Heading text={headingText} />
       </div>
 
@@ -33,6 +33,6 @@ export const ContentShowcase = ({
           <ContentCard key={index} {...item} />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
