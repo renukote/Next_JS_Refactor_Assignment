@@ -25,9 +25,9 @@ export const Navbar = () => {
         </Button>
       </div>
 
-      <nav className="h-[85vh] sm:hidden">
+      <nav className="sm:hidden">
         {isMenuOpen && (
-          <div className="flex items-center">
+          <div className="flex h-[85vh] items-center">
             <Button
               additionalButtonClassNames="mt-2 flex flex-col space-y-6 px-5"
               onClick={toggleMenu}
