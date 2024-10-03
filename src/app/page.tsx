@@ -16,6 +16,8 @@ export default function Home() {
         headingText="Lorem ipsum"
         topCardDataSet={cardOneData}
         bottomCardDataSet={cardTwoData}
+        titleHeadingType="h1"
+        contentHeadingType="h2"
       />
       <AboutUs />
       <Slider />

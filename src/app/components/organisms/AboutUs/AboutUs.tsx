@@ -37,7 +37,7 @@ export const AboutUs = () => {
             <div className="my-auto">
               <Heading
                 additionalClassNames="hidden sm:block whitespace-pre"
-                tagType="h1"
+                tagType="h3"
                 text={`About \nus`}
               />
               <p className="whitespace-pre leading-relaxed text-white opacity-70">
@@ -69,7 +69,7 @@ export const AboutUs = () => {
         </div>
 
         <div className="mb-4 flex w-full flex-col gap-5 pr-4 sm:hidden sm:w-1/3 md:w-1/3 lg:w-1/3 xl:w-1/3">
-          <Heading text="Lorem Ipsum" tagType="h1" />
+          <Heading text="Lorem Ipsum" tagType="h3" />
           <p className="leading-relaxed opacity-70">Instagram</p>
           <p className="leading-relaxed opacity-70">LinkedIn</p>
 

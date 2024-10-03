@@ -15,9 +15,9 @@ export const Heading = ({
   viewType = "large",
 }: HeadingProps) => {
   const headingClassNames = clsx(
-    "font-semibold uppercase leading-none text-white text-5xl sm:text-7xl",
+    "font-semibold uppercase leading-none text-white text-2xl sm:text-2xl",
     {
-      "text-2xl sm:text-2xl": viewType === "small",
+      "text-5xl sm:text-7xl": viewType !== "small",
       [additionalClassNames as string]: !!additionalClassNames,
     },
   );
