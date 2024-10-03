@@ -1,4 +1,5 @@
 import React from "react";
+import clsx from "clsx";
 
 export interface HeadingProps {
   additionalClassNames?: string;
@@ -13,14 +14,13 @@ export const Heading = ({
   text,
   viewType = "large",
 }: HeadingProps) => {
-  const headingFontSize =
-    viewType === "small" ? "text-2xl" : "text-5xl sm:text-7xl";
-
-  return (
-    <Tag
-      className={`font-semibold uppercase leading-none text-white ${headingFontSize} ${additionalClassNames}`}
-    >
-      {text}
-    </Tag>
+  const headingClassNames = clsx(
+    "font-semibold uppercase leading-none text-white text-5xl sm:text-7xl",
+    {
+      "text-2xl sm:text-2xl": viewType === "small",
+      [additionalClassNames as string]: !!additionalClassNames,
+    },
   );
+
+  return <Tag className={headingClassNames}>{text}</Tag>;
 };

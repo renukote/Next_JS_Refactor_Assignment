@@ -29,7 +29,7 @@ export const AboutUs = () => {
     <section className="xl:w-2/2 container mx-auto p-4 pt-20 md:w-3/4 lg:w-3/4 xl:pt-10">
       <div className="pt-20">
         <div
-          className="relative hidden h-[400px] w-full overflow-hidden sm:block"
+          className="relative hidden h-96 w-full overflow-hidden sm:block"
           onMouseMove={handleMouseMove}
           onMouseLeave={handleMouseLeave}
         >
@@ -73,7 +73,7 @@ export const AboutUs = () => {
           <p className="leading-relaxed opacity-70">Instagram</p>
           <p className="leading-relaxed opacity-70">LinkedIn</p>
 
-          <p className="pt-[60px] leading-relaxed opacity-70">
+          <p className="pt-16 leading-relaxed opacity-70">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut

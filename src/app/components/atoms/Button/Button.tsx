@@ -1,4 +1,5 @@
 import React, { ReactNode } from "react";
+import clsx from "clsx";
 
 export interface ButtonProps {
   additionalButtonClassNames?: string;
@@ -11,11 +12,12 @@ export const Button = ({
   children,
   onClick,
 }: ButtonProps) => {
+  const buttonClassNames = clsx("outline-none", {
+    [additionalButtonClassNames as string]: !!additionalButtonClassNames,
+  });
+
   return (
-    <button
-      onClick={onClick}
-      className={`outline-none ${additionalButtonClassNames}`}
-    >
+    <button onClick={onClick} className={buttonClassNames}>
       {children}
     </button>
   );

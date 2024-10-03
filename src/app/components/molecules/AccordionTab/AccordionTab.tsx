@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import { Button } from "../../atoms/Button/Button";
 import { Image } from "../../atoms/Image/Image";
 
@@ -17,13 +18,15 @@ export const AccordionTab = ({
   title,
   content,
 }: AccordionTabProps) => {
+  const buttonClassNames = clsx("relative h-12 cursor-pointer w-full", {
+    "bg-gradient-footer": isActive,
+  });
+
   return (
     <section className="rounded p-2 pb-2">
       <Button
         onClick={() => onClickCallback(index)}
-        additionalButtonClassNames={`relative h-12 cursor-pointer w-full ${
-          isActive && "bg-gradient-footer"
-        }`}
+        additionalButtonClassNames={buttonClassNames}
       >
         <div className="container relative mx-auto flex h-12 max-w-screen-xl items-center justify-between px-5">
           <p className="text-base font-medium uppercase text-white lg:text-2xl">
