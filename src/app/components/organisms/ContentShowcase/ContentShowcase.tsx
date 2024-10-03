@@ -23,14 +23,14 @@ export const ContentShowcase = ({
       </div>
 
       <div className="flex flex-wrap">
-        {topCardDataSet.map((item, index) => (
-          <ContentCard key={index} {...item} />
+        {topCardDataSet.map((content) => (
+          <ContentCard key={content.title} {...content} />
         ))}
       </div>
 
       <div className="mt-4 flex flex-wrap justify-end">
-        {bottomCardDataSet.map((item, index) => (
-          <ContentCard key={index} {...item} />
+        {bottomCardDataSet.map((content) => (
+          <ContentCard key={content.title} {...content} />
         ))}
       </div>
     </section>

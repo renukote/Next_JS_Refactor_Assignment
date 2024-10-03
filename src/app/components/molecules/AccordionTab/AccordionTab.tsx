@@ -44,7 +44,7 @@ export const AccordionTab = ({
       </Button>
 
       {isActive && (
-        <p className="container mx-auto mt-5 max-w-screen-xl px-5 leading-7 text-gray-300">
+        <p className="mx-auto mt-5 max-w-screen-xl px-5 leading-7 text-gray-300">
           {content}
         </p>
       )}
