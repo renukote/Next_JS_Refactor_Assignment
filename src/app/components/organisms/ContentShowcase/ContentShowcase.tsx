@@ -7,7 +7,7 @@ import {
 
 interface ContentShowcaseProps {
   bottomCardDataSet: ContentCardProps[];
-  headingText: string;
+  headingText: HeadingProps["text"];
   topCardDataSet: ContentCardProps[];
   titleHeadingType?: HeadingProps["tagType"];
   contentHeadingType?: HeadingProps["tagType"];

@@ -6,7 +6,7 @@ export interface ContentCardProps {
   headImage?: ImageProps["src"];
   icon?: ImageProps["src"];
   paragraph?: string;
-  title?: string;
+  title?: HeadingProps["text"];
   headingType?: HeadingProps["tagType"];
 }
 
