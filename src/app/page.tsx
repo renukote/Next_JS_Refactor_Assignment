@@ -1,19 +1,31 @@
-import Navbar from "./components/navbar";
-import HomePage from "./components/homePage";
-import AboutUs from "./components/aboutUs";
-import HomePageTwo from "./components/homePageTwo";
-import FooterSection from "./components/footerSection";
-import ScrollingText from "./components/Slider";
+import React from "react";
+import { AboutUs } from "./components/organisms/AboutUs/AboutUs";
+import { ContentShowcase } from "./components/organisms/ContentShowcase/ContentShowcase";
+import { Slider } from "./components/organisms/Slider/Slider";
+import {
+  cardFourData,
+  cardOneData,
+  cardThreeData,
+  cardTwoData,
+} from "./data/allPageData";
 
 export default function Home() {
   return (
-    <main>
-      <Navbar />
-      <HomePage />
+    <>
+      <ContentShowcase
+        headingText="Lorem ipsum"
+        topCardDataSet={cardOneData}
+        bottomCardDataSet={cardTwoData}
+        titleHeadingType="h1"
+        contentHeadingType="h2"
+      />
       <AboutUs />
-      <ScrollingText />
-      <HomePageTwo />
-      <FooterSection />
-    </main>
+      <Slider />
+      <ContentShowcase
+        headingText="Lorem ipsum dolor set"
+        topCardDataSet={cardThreeData}
+        bottomCardDataSet={cardFourData}
+      />
+    </>
   );
 }
